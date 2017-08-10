@@ -79,4 +79,4 @@ FROM todos
 WHERE created_at = (select min(created_at)
 FROM todos
 WHERE priority = 1
-AND completed_at = NULL);
+AND completed_at IS NULL);
